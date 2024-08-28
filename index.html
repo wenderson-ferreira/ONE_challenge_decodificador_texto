@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/styles.css">
+
+    <title>ONE Challenge - Decodificador de texto</title>
+</head>
+<body>
+    <header>
+        <div id="container_logo">
+            <img src="resources/img/logo.png" alt="Logo Alura" title="Logo Alura" />
+            <h1>Decodificador de texto</h1>
+        </div>
+    </header>
+    <main class="decodificador">
+        <section class="decodificador__formulario">
+            <textarea class="decodificador__formulario__textarea" onfocus="limparTexto()">Digite seu Texto</textarea>
+            <p><img src="resources/img/icone_info.png" alt="Informação" title="Informação" /> Apenas letras minúsculas e sem acento.</p>
+            <div class="decodificador__formulario_content_botoes">
+                <a class="decodificador__formulario_botoes btn-primary" type="button" onclick="criptografar()">Criptografar</a>
+                <a class="decodificador__formulario_botoes btn-secondary" type="button" onclick="descriptografar()">Descriptografar</a>
+            </div>
+        </section>
+        <section class="decodificador__mensagem">
+            <div id="conteudo_estatico">
+                <div class="imagem_mensagem"></div>
+                <p class="conteudo_estatico_titulo">Nenhuma mensagem encontrada.</p>
+                <p class="conteudo_estatico_mensagem">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div id="conteudo_dinamico">
+                <div class="texto_mensagem">
+                    <p id="texto_cripto"></p>
+                </div>
+                <div class="btn_copiar">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+    <script type="text/javascript" src="resources/js/app.js"></script>
+</body>
+</html>
